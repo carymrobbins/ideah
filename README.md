@@ -19,6 +19,15 @@ To work with the plugin, you'll need:
 All future releases will support IDEA 11.x exclusively. 10.x will not be supported.
 We are working towards 12.x support.
 
+This project uses [Apache Maven][19] to manage its build.
+
+```
+cd <project directory>
+mvn package
+```
+
+Visit [this page][20] to set up IntelliJ for developing plugins.
+
 
 ### Current
 
@@ -108,3 +117,5 @@ I (@fushunpoon) moved the project sources, issues and wiki over to GitHub from G
  [16]: http://code.google.com/u/110309710902971481338/
  [17]: http://www.haskell.org/cabal
  [18]: http://code.google.com/p/ideah/downloads/detail?name=ideah-bin-0.1.zip&can=1&q=
+ [19]: http://maven.apache.org
+ [20]: http://www.jetbrains.org/display/IJOS/Writing+Plug-ins

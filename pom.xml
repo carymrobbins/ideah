@@ -1,22 +1,62 @@
-<?xml version="1.0" encoding="Windows-1251"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ideah</groupId>
+    <artifactId>ideah</artifactId>
+    <packaging>jar</packaging>
+    <version>0.2.11</version>
+    <name>IntelliJ IDEA Haskell Plugin</name>
+    <url>https://github.com/fushunpoon/ideah</url>
 
-<project name="ideah" default="build">
 
-    <description>IDEA Haskell plugin</description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
-    <property file="build.properties"/>
+    <dependencies>
+        <dependency>
+            <groupId>com.intellij</groupId>
+            <artifactId>openapi</artifactId>
+            <version>7.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>14.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>2.0.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
-    <property name="project.version" value="0.2.11"/>
+    <properties>
+        <hs.dir>src/haskell/ask_ghc</hs.dir>
+    </properties>
 
-    <property name="src.dir" location="src/java"/>
-    <property name="hs.dir" location="src/haskell/ask_ghc"/>
-    <property name="classes.dir" location="out/production/ideah"/>
-    <property name="distr.dir" location="distr"/>
-
+</project>
+<!--
     <path id="project.classpath">
-        <fileset dir="${lib.dir}">
-            <include name="guava*.jar"/>
-        </fileset>
         <pathelement path="${lib.dir}/annotations.jar"/>
         <pathelement path="${lib.dir}/jdom.jar"/>
         <pathelement path="${lib.dir}/openapi.jar"/>
@@ -33,7 +73,6 @@
 
     <target name="init">
         <echo message="Building ${ant.project.name} with JDK ${java.version}"/>
-        <!-- Create the time stamp -->
         <tstamp/>
         <mkdir dir="${classes.dir}"/>
         <mkdir dir="${distr.dir}"/>
@@ -100,3 +139,4 @@
         </zip>
     </target>
 </project>
+-->
