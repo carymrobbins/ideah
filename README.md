@@ -88,7 +88,7 @@ Supports:
 ## Contributors
 
 ideah was developed by Oleg Sobolev and Marianna Rapoport (@amaurremi).
-I (@fushunpoon) moved the project sources, issues and wiki over to GitHub from Google Code.
+I (@fatuhoku) moved the project sources, issues and wiki over to GitHub from Google Code.
 
  [1]: http://www.haskell.org/haskellwiki/Haskell
  [2]: http://www.jetbrains.com/idea/
