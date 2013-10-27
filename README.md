@@ -58,7 +58,7 @@ Our future plans:
 
 Please [let us know][8] what features would be most helpful to you.
 
-See the [wiki][9] guides for [installation][10], [configuration][11] and [usage][12].
+See the [wiki][9] guides for [installation/configuration][10] and [usage][12].
 
 ## January 23, 2012
 
@@ -99,9 +99,9 @@ I (@fatuhoku) moved the project sources, issues and wiki over to GitHub from Goo
  [7]: http://www.haskell.org/ghc/download
  [8]: mailto:ideah.plugin@gmail.com?subject=Features
  [9]: http://code.google.com/p/ideah/w/list
- [10]: https://github.com/fushunpoon/ideah/wiki/Installing-ideah
+ [10]: https://code.google.com/p/ideah/wiki/InstallConfig
  [11]: https://github.com/fushunpoon/ideah/wiki/Installing-ideah#Creating_Haskell_Project
- [12]: https://github.com/fushunpoon/ideah/wiki/Using-ideah
+ [12]: https://code.google.com/p/ideah/wiki/Usage
  [13]: http://www.haskell.org/platform/
  [14]: http://code.google.com/p/ideah/downloads/detail?name=ideah-bin-0.2.zip
  [15]: http://code.google.com/p/ideah/downloads/detail?name=ideah-bin-0.2.11.zip
